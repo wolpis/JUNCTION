@@ -5,12 +5,12 @@ export const HeaderBar = () => {
     return (
         <header className={style.header_}>
             <div>
-                <img src="/logo_2.png" style={{ width: "90px" }} />
+                <img src="/logo_2.png" style={{ width: "90px" }} onClick={() => location.replace("/")} />
                 <span>Home</span>
                 <span>Hall of Fame</span>
                 <span>Sponser</span>
                 <span>We are?</span>
-                <div className={style.sign_up}>Sign Up</div>
+                <div className={style.sign_up} onClick={() => location.replace("/sign-in")}>Sign In</div>
             </div>
         </header>
     )
