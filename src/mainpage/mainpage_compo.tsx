@@ -1,4 +1,6 @@
 import style from "./mainpage.module.css"
+import { LuArrowRight } from "react-icons/lu";
+
 
 export const HeaderBar = () => {
     return (
@@ -57,7 +59,7 @@ const ProcessBar = () => {
 const SubmitButton = () => {
     return (
         <div className={style.submit_button}>
-            Submit Yours Now!
+            Submit Yours Now! <h3 style={{ display: "flex", alignItems: "center", marginLeft: "13px" }}>< LuArrowRight /></h3>
         </div>
     )
 }
