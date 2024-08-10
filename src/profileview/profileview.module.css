@@ -1,0 +1,70 @@
+.profile_banner {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 29.11%, rgba(0, 0, 0, 0.60) 100%), url(/ProfileBanner.png) lightgray 50% / cover no-repeat;
+    height: 30vh;
+    width: 100%;
+}
+
+.profile_image {
+    position: relative;
+    height: 15vh;
+    margin-left: 200px;
+    bottom: calc(15vh/2);
+}
+
+.banner {
+    background-color: var(--bg-primary);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.banner>.profile_name {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    bottom: calc(15vh/2);
+    margin-left: 200px;
+    gap: 20px;
+    align-content: center;
+    align-items: center;
+}
+
+.banner>.profile_name>span {
+    font-size: 1.5em;
+    color: white;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 2px;
+}
+
+.tier {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-content: center;
+    align-items: center;
+}
+
+.tier>p {
+    color: white;
+    opacity: 0.7;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.banner>p {
+    margin-left: 200px;
+    color: white;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 1px;
+    width: calc(100vw - 400px);
+    position: relative;
+    bottom: calc(15vh/2);
+    margin-top: 15px;
+}

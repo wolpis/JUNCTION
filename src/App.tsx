@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import Mainpage from './mainpage/mainpage'
 import SignInPage from './signin/signinpage'
 import SignUpPage from './signup/signuppage'
+import Profile from './profileview/profileview'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Route path="/" element={<Mainpage />} />
       <Route path="/sign-in" element={<SignInPage />} />
       <Route path="/sign-up" element={<SignUpPage />} />
+      <Route path="/profile/:userId" element={<Profile />} />
     </Routes>
   )
 }
