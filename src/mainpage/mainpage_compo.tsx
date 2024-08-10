@@ -1,4 +1,5 @@
 import style from "./mainpage.module.css"
+import { LuArrowRight, LuHeart } from "react-icons/lu";
 
 export const HeaderBar = () => {
     return (
@@ -57,7 +58,127 @@ const ProcessBar = () => {
 const SubmitButton = () => {
     return (
         <div className={style.submit_button}>
-            Submit Yours Now!
+            Submit Yours Now! <h3 style={{ display: "flex", alignItems: "center", marginLeft: "13px" }}>< LuArrowRight /></h3>
+        </div>
+    )
+}
+
+export const RealTimeHot = () => {
+    return (
+        <div className={style.real_tiem_hot}>
+            <h2>🔥 Real-time Hot Ideas</h2>
+
+            <div style={{ display: "flex", marginTop: "30px", justifyContent: "center" }}>
+                <div className={style.box}>
+                    <header style={{ margin: "20px" }}>
+                        <h1 style={{ fontSize: "1.7em", textAlign: "left" }}>Self-driving<br />wheelchair<br />for disabled</h1>
+                    </header>
+                    <footer style={{ display: "flex", backgroundColor: "#22202E", marginTop: "100px" }}>
+                        <div style={{ display: "flex", padding: "7px", paddingLeft: "15px", paddingRight: "15px", width: "100%" }}>
+                            <div style={{ backgroundColor: "#343145", width: "35px", height: "35px", borderRadius: "100%" }}></div>
+                            <div style={{ display: "flex", flexDirection: "column", textAlign: "left", marginLeft: "15px", marginRight: "auto" }}>
+                                <p>Dohan Kwon</p>
+                                <p style={{ fontSize: "0.9rem", color: "#4F4D6C" }}>Planner</p>
+                            </div>
+                            <div><h1 style={{ display: "flex", placeContent: "center" }}><LuHeart /></h1></div>
+                        </div>
+                    </footer>
+                </div>
+                <div className={style.box} style={{ marginLeft: "20px", marginRight: "20px" }}>
+                    <header style={{ margin: "20px" }}>
+                        <h1 style={{ fontSize: "1.7em", textAlign: "left" }}>Self-driving<br />wheelchair<br />for disabled</h1>
+                    </header>
+                    <footer style={{ display: "flex", backgroundColor: "#22202E", marginTop: "100px" }}>
+                        <div style={{ display: "flex", padding: "7px", paddingLeft: "15px", paddingRight: "15px", width: "100%" }}>
+                            <div style={{ backgroundColor: "#343145", width: "35px", height: "35px", borderRadius: "100%" }}></div>
+                            <div style={{ display: "flex", flexDirection: "column", textAlign: "left", marginLeft: "15px", marginRight: "auto" }}>
+                                <p>Dohan Kwon</p>
+                                <p style={{ fontSize: "0.9rem", color: "#4F4D6C" }}>Planner</p>
+                            </div>
+                            <div><h1 style={{ display: "flex", placeContent: "center" }}><LuHeart /></h1></div>
+                        </div>
+                    </footer>
+                </div>
+                <div className={style.box}>
+                    <header style={{ margin: "20px" }}>
+                        <h1 style={{ fontSize: "1.7em", textAlign: "left" }}>Self-driving<br />wheelchair<br />for disabled</h1>
+                    </header>
+                    <footer style={{ display: "flex", backgroundColor: "#22202E", marginTop: "100px" }}>
+                        <div style={{ display: "flex", padding: "7px", paddingLeft: "15px", paddingRight: "15px", width: "100%" }}>
+                            <div style={{ backgroundColor: "#343145", width: "35px", height: "35px", borderRadius: "100%" }}></div>
+                            <div style={{ display: "flex", flexDirection: "column", textAlign: "left", marginLeft: "15px", marginRight: "auto" }}>
+                                <p>Dohan Kwon</p>
+                                <p style={{ fontSize: "0.9rem", color: "#4F4D6C" }}>Planner</p>
+                            </div>
+                            <div><h1 style={{ display: "flex", placeContent: "center" }}><LuHeart /></h1></div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export const NewIdea = () => {
+    return (
+        <div className={style.new_idea}>
+            <h2>🚀 New Ideas</h2>
+
+            <div style={{ display: "flex", marginTop: "30px", justifyContent: "center" }}>
+                <div className={style.box}>
+                    <header style={{ margin: "20px" }}>
+                        <h1 style={{ fontSize: "1.7em", textAlign: "left" }}>Self-driving<br />wheelchair<br />for disabled</h1>
+                    </header>
+                    <footer style={{ display: "flex", backgroundColor: "#22202E", marginTop: "100px" }}>
+                        <div style={{ display: "flex", padding: "7px", paddingLeft: "15px", paddingRight: "15px", width: "100%" }}>
+                            <div style={{ backgroundColor: "#343145", width: "35px", height: "35px", borderRadius: "100%" }}></div>
+                            <div style={{ display: "flex", flexDirection: "column", textAlign: "left", marginLeft: "15px", marginRight: "auto" }}>
+                                <p>Dohan Kwon</p>
+                                <p style={{ fontSize: "0.9rem", color: "#4F4D6C" }}>Planner</p>
+                            </div>
+                            <div><h1 style={{ display: "flex", placeContent: "center" }}><LuHeart /></h1></div>
+                        </div>
+                    </footer>
+                </div>
+                <div className={style.box} style={{ marginLeft: "20px", marginRight: "20px" }}>
+                    <header style={{ margin: "20px" }}>
+                        <h1 style={{ fontSize: "1.7em", textAlign: "left" }}>Self-driving<br />wheelchair<br />for disabled</h1>
+                    </header>
+                    <footer style={{ display: "flex", backgroundColor: "#22202E", marginTop: "100px" }}>
+                        <div style={{ display: "flex", padding: "7px", paddingLeft: "15px", paddingRight: "15px", width: "100%" }}>
+                            <div style={{ backgroundColor: "#343145", width: "35px", height: "35px", borderRadius: "100%" }}></div>
+                            <div style={{ display: "flex", flexDirection: "column", textAlign: "left", marginLeft: "15px", marginRight: "auto" }}>
+                                <p>Dohan Kwon</p>
+                                <p style={{ fontSize: "0.9rem", color: "#4F4D6C" }}>Planner</p>
+                            </div>
+                            <div><h1 style={{ display: "flex", placeContent: "center" }}><LuHeart /></h1></div>
+                        </div>
+                    </footer>
+                </div>
+                <div className={style.box}>
+                    <header style={{ margin: "20px" }}>
+                        <h1 style={{ fontSize: "1.7em", textAlign: "left" }}>Self-driving<br />wheelchair<br />for disabled</h1>
+                    </header>
+                    <footer style={{ display: "flex", backgroundColor: "#22202E", marginTop: "100px" }}>
+                        <div style={{ display: "flex", padding: "7px", paddingLeft: "15px", paddingRight: "15px", width: "100%" }}>
+                            <div style={{ backgroundColor: "#343145", width: "35px", height: "35px", borderRadius: "100%" }}></div>
+                            <div style={{ display: "flex", flexDirection: "column", textAlign: "left", marginLeft: "15px", marginRight: "auto" }}>
+                                <p>Dohan Kwon</p>
+                                <p style={{ fontSize: "0.9rem", color: "#4F4D6C" }}>Planner</p>
+                            </div>
+                            <div><h1 style={{ display: "flex", placeContent: "center" }}><LuHeart /></h1></div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export const More = () => {
+    return (
+        <div style={{ backgroundColor: "black", color: "white", fontWeight: "600", fontSize: "1.2em", textAlign: "center", padding: "10px", cursor: "pointer" }}>
+            More +
         </div>
     )
 }
