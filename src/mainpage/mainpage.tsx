@@ -1,5 +1,5 @@
 import { Fragment } from "react/jsx-runtime"
-import { HeaderBar, MainBanner } from "./mainpage_compo"
+import { HeaderBar, MainBanner, TopicProcess } from "./mainpage_compo"
 
 
 const Mainpage = () => {
@@ -7,6 +7,7 @@ const Mainpage = () => {
         <Fragment>
             <HeaderBar />
             <MainBanner />
+            <TopicProcess />
         </Fragment>
     )
 }

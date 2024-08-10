@@ -26,3 +26,23 @@ export const MainBanner = () => {
         </div>
     )
 }
+
+export const TopicProcess = () => {
+    return (
+        <div className={style.topic_process}>
+            <div className={style.process_text}>
+                <span>Today is:</span> Mon<br />
+                Planning Session <span>is ~ing</span>
+            </div>
+            <ProcessBar />
+        </div>
+    )
+}
+
+const ProcessBar = () => {
+    return (
+        <div className={style.process_bar}>
+
+        </div>
+    )
+}

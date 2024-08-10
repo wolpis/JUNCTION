@@ -45,7 +45,7 @@
 
 .main_banner {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url(/Banner.png) lightgray 50% / cover no-repeat;
-    height: 70vh;
+    height: 55vh;
     display: flex;
     align-items: flex-end;
 }
@@ -55,4 +55,30 @@
     margin-bottom: 50px;
     color: var(--solid-white);
 
+}
+
+.topic_process {
+    background-color: #0E0E10;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.topic_process>.process_text {
+    color: #9700EF;
+    font-size: 2.25em;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.topic_process>.process_text>span {
+    color: white;
+}
+
+.process_bar {
+    width: 700px;
+    height: 10px;
+    background-color: brown;
 }
