@@ -1,34 +1,27 @@
 .header_ {
-    
+    background-color: #0E0E10;
+    display: flex;
+    justify-content: center;
 }
 
-.header_ > div {
+.header_>div {
     display: flex;
     padding: 10px;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    background-color: #0E0E10;
     justify-content: space-between;
-    padding-left: 70px;
-    padding-right: 70px;
+    width: 700px;
 }
 
-.nav_ > span {
+.header_>div>span {
     font-size: 0.7em;
     font-weight: 400;
-    line-height: 150%; /* 30px */
+    line-height: 150%;
+    /* 30px */
     letter-spacing: 1px;
     color: var(--solid-white);
     opacity: 0.7;
-}
-
-.nav_ {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-    color: var(--solid-white);
 }
 
 .sign_up {
@@ -37,7 +30,8 @@
     color: var(--solid-white);
     padding: 7px;
     letter-spacing: 1px;
-    line-height: 150%; /* 30px */
+    line-height: 150%;
+    /* 30px */
     border-radius: 0.5em;
 
 }
