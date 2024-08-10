@@ -1,15 +1,19 @@
 import { Fragment } from "react/jsx-runtime"
-import { HeaderBar, MainBanner, TopicProcess } from "./mainpage_compo"
+import { HeaderBar, MainBanner, More, NewIdea, RealTimeHot, TopicProcess } from "./mainpage_compo"
 
 
-const Mainpage = () => {
+const MainPage = () => {
     return (
         <Fragment>
             <HeaderBar />
             <MainBanner />
             <TopicProcess />
+            <RealTimeHot />
+            <NewIdea />
+            <More />
+            {/* <Footer /> */}
         </Fragment>
     )
 }
 
-export default Mainpage
+export default MainPage
