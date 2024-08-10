@@ -1,4 +1,5 @@
 import style from "./signinpage.module.css"
+import { MainButton } from "../components/MainButton"
 
 export const SignIn = () => {
     return (
@@ -13,6 +14,13 @@ export const SignIn = () => {
                 <div className={style.inputWarp}>
                     <input className={style.inputBox} type="password" name="name" placeholder="Password" />
                     <span className={style.inputFocus}></span>
+                </div>
+                <div style={{ height: "50px" }}></div>
+                <MainButton style={{ paddingLeft: "100px", paddingRight: "100px", marginBottom: "15px" }}>
+                    Sign In
+                </MainButton>
+                <div className={style.desc}>
+                    <span>Sign Up</span> or <span>Find E-mail & PW</span>
                 </div>
             </div>
         </div>
