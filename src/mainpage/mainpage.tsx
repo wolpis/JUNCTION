@@ -1,5 +1,5 @@
 import { Fragment } from "react/jsx-runtime"
-import { HeaderBar, MainBanner, More, NewIdea, RealTimeHot, TopicProcess } from "./mainpage_compo"
+import { HeaderBar, MainBanner, More, NewIdea, RealTimeHot, TopicProcess, Footer_ } from "./mainpage_compo"
 
 
 const MainPage = () => {
@@ -11,7 +11,7 @@ const MainPage = () => {
             <RealTimeHot />
             <NewIdea />
             <More />
-            {/* <Footer /> */}
+            <Footer_ />
         </Fragment>
     )
 }

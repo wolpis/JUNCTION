@@ -177,8 +177,26 @@ export const NewIdea = () => {
 
 export const More = () => {
     return (
-        <div style={{ backgroundColor: "black", color: "white", fontWeight: "600", fontSize: "1.2em", textAlign: "center", padding: "10px", cursor: "pointer" }}>
+        <div style={{ backgroundColor: "black", color: "white", fontWeight: "600", fontSize: "1.2em", textAlign: "center", padding: "15px", cursor: "pointer" }}>
             More +
+        </div>
+    )
+}
+
+export const Footer_ = () => {
+    return (
+        <div style={{ backgroundColor: "#101012" }}>
+            <div style={{ backgroundImage: "url(./logo.png)", height: "200px", backgroundRepeat: "no-repeat", backgroundSize: "15%", backgroundPositionY: "center", backgroundPositionX: "90%" }}>
+                <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
+                    <div style={{ display: "flex", flexDirection: "column", color: "gray" }}>
+                        <img src="/logo_2.png" style={{ width: "120px" }} />
+                        <div style={{ marginTop: "10px" }}>
+                            <span style={{ fontWeight: "600", textDecorationLine: "underline", cursor: "pointer" }}>Terms of Service</span><span style={{ fontWeight: "600", marginLeft: "20px", textDecorationLine: "underline", cursor: "pointer" }}>Privacy Policy</span>
+                        </div>
+                        <span>Copyrightⓒ Since 2024, ALLBLUE All rights reserved.</span>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
