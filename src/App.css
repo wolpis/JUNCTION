@@ -1,21 +1,20 @@
 * {
-  margin : 0;
+  margin: 0;
   font-family: "Wanted Sans Variable", "Wanted Sans", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 :root {
-  --solid-skyblue : #089CFF;
-  --solid-purple : #9700EF;
-  --solid-green : #16C355;
-  --solid-orange : #E36A00;
-  --solid-pink : #E3009B;
-  --solid-black : #000000;
-  --solid-white : #ffffff;
+  --solid-skyblue: #089CFF;
+  --solid-purple: #BB4BFD;
+  --solid-green: #16C355;
+  --solid-orange: #E36A00;
+  --solid-pink: #E3009B;
+  --solid-black: #000000;
+  --solid-white: #ffffff;
 
-  --bg-primary : #000000;
-  --bg-secondary : #101012;
-  --bg-teritary : #14131C;
+  --bg-primary: #0E0E10;
+  --bg-secondary: #101012;
+  --bg-teritary: #14131C;
 
-  --line : #797C8A;
+  --line: #797C8A;
 }
-

@@ -35,14 +35,29 @@ export const TopicProcess = () => {
                 Planning Session <span>is ~ing</span>
             </div>
             <ProcessBar />
+            <SubmitButton />
         </div>
     )
 }
 
 const ProcessBar = () => {
     return (
-        <div className={style.process_bar}>
+        <div className={style.process}>
+            <div className={style.process_bar}></div>
+            <div className={style.process_desc}>
+                <p className={style.currect_process}>Planning(Mon~Tue)</p>
+                <p>Design(Tue~Wed)</p>
+                <p>Dev(Wed~Sat)</p>
+                <p>Evaluate(Sun)</p>
+            </div>
+        </div>
+    )
+}
 
+const SubmitButton = () => {
+    return (
+        <div className={style.submit_button}>
+            Submit Yours Now!
         </div>
     )
 }

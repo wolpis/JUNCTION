@@ -1,5 +1,5 @@
 .header_ {
-    background-color: #0E0E10;
+    background-color: var(--bg-primary);
     display: flex;
     justify-content: center;
     position: fixed;
@@ -58,14 +58,16 @@
 }
 
 .topic_process {
-    background-color: #0E0E10;
+    background-color: var(--bg-primary);
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
 }
 
 .topic_process>.process_text {
-    color: #9700EF;
+    color: var(--solid-purple);
     font-size: 2.25em;
     font-weight: 600;
     margin-top: 50px;
@@ -80,5 +82,22 @@
 .process_bar {
     width: 700px;
     height: 10px;
-    background-color: brown;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.80) 15.83%), linear-gradient(90deg, #BB4BFD 0%, #E36A00 28.85%, #16C355 88.07%, #089CFF 100%);
 }
+
+.process_desc {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    justify-content: space-between;
+    color: white;
+    opacity: 0.7;
+}
+
+.currect_process {
+    color: var(--solid-purple);
+    opacity: 1;
+}
+
+.submit_button {}
