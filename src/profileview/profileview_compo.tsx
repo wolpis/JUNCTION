@@ -15,7 +15,30 @@ export const ProfileBanner = ({ userId }: { userId: string | undefined }) => {
     )
 }
 
+const posi = (value: number) => {
+    if (value === 0) {
+        return "0"
+    }
+    if (value >= 1 && value <= 2) {
+        return "0.25"
+    } else if (value >= 3 && value <= 5) {
+        return "0.5"
+    } else if (value >= 6 && value <= 7) {
+        return "0.75"
+    } else {
+        return "1"
+    }
+}
+
 export const Glass = ({ userId }: { userId: string | undefined }) => {
+    const s = Array.from({ length: 50 }, () => Math.floor(Math.random() * 10) + 1);
+    const m = Array.from({ length: 50 }, () => Math.floor(Math.random() * 10) + 1);
+    const t = Array.from({ length: 50 }, () => Math.floor(Math.random() * 10) + 1);
+    const w = Array.from({ length: 50 }, () => Math.floor(Math.random() * 10) + 1);
+    const tt = Array.from({ length: 50 }, () => Math.floor(Math.random() * 10) + 1);
+    const f = Array.from({ length: 50 }, () => Math.floor(Math.random() * 10) + 1);
+    const sa = Array.from({ length: 50 }, () => Math.floor(Math.random() * 10) + 1);
+
     return (
         <div className={style.glassWrap}>
             <div className={style.glass}>
@@ -24,365 +47,85 @@ export const Glass = ({ userId }: { userId: string | undefined }) => {
                     <div className={style.horizontal}>
                         <p>S</p>
                         <div className={style.glassContent}>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
+                            {
+                                s.map((da) => {
+                                    return (
+                                        <div style={{ opacity: posi(da) }}></div>
+                                    )
+                                })
+                            }
                         </div>
                     </div>
                     <div className={style.horizontal}>
                         <p>M</p>
                         <div className={style.glassContent}>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
+                            {
+                                m.map((da) => {
+                                    return (
+                                        <div style={{ opacity: posi(da) }}></div>
+                                    )
+                                })
+                            }
                         </div>
                     </div>
                     <div className={style.horizontal}>
                         <p>T</p>
                         <div className={style.glassContent}>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
+                            {
+                                t.map((da) => {
+                                    return (
+                                        <div style={{ opacity: posi(da) }}></div>
+                                    )
+                                })
+                            }
                         </div>
                     </div>
                     <div className={style.horizontal}>
                         <p>W</p>
                         <div className={style.glassContent}>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
+                            {
+                                w.map((da) => {
+                                    return (
+                                        <div style={{ opacity: posi(da) }}></div>
+                                    )
+                                })
+                            }
                         </div>
                     </div>
                     <div className={style.horizontal}>
                         <p>T</p>
                         <div className={style.glassContent}>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
+                            {
+                                tt.map((da) => {
+                                    return (
+                                        <div style={{ opacity: posi(da) }}></div>
+                                    )
+                                })
+                            }
                         </div>
                     </div>
                     <div className={style.horizontal}>
                         <p>F</p>
                         <div className={style.glassContent}>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
+                            {
+                                f.map((da) => {
+                                    return (
+                                        <div style={{ opacity: posi(da) }}></div>
+                                    )
+                                })
+                            }
                         </div>
                     </div>
                     <div className={style.horizontal}>
                         <p>S</p>
                         <div className={style.glassContent}>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
+                            {
+                                sa.map((da) => {
+                                    return (
+                                        <div style={{ opacity: posi(da) }}></div>
+                                    )
+                                })
+                            }
                         </div>
                     </div>
                 </div>

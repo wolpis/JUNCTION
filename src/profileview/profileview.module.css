@@ -114,6 +114,7 @@
     gap: 6px;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .horizontal>p {
@@ -134,12 +135,14 @@
     align-items: center;
 }
 
+
 .glassContent>div {
     border-radius: 3px;
-    background: var(--solid-skyblue);
+    background: var(--solid-green);
     width: 12px;
     height: 12px;
 }
+
 
 .best_idea_wrap {
     padding-top: 10px;
