@@ -18,19 +18,42 @@
     flex-direction: column;
     align-content: center;
     align-items: center;
-    justify-content: center;
-    font-size: 1em;
+    justify-content: flex-start;
+    font-size: 1.3em;
     background-image: url(/logo.png);
     background-repeat: no-repeat;
     background-position-x: 120%;
     background-position-y: -20%;
 }
 
-.container>.desc {
-    color: rgba(255, 255, 255, 0.5);
+.container>p {
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 1.4px;
+    color: white;
 }
 
-input:focus::placeholder {
+.progress {
+    width: 100%;
+    position: relative;
+}
+
+.progressBar {
+    height: 10px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    position: absolute;
+}
+
+.current {
+    background-color: var(--solid-skyblue);
+    border-radius: 10px;
+    position: absolute;
+}
+
+s input:focus::placeholder {
     color: transparent;
 }
 
