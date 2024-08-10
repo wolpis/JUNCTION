@@ -1,0 +1,91 @@
+.signin {
+    background-color: var(--bg-primary);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border: 1px solid rgba(174, 180, 208, .24);
+    width: 40vw;
+    height: 70vh;
+    margin-top: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.container>p {
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 1.4px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+input::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+.inputWarp {
+    border-bottom: 2px solid var(--solid-skyblue);
+    width: 70%;
+    position: relative;
+    margin-top: 20px;
+}
+
+input {
+    font-size: 0.9em;
+    color: white;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    width: 100%;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 1px;
+}
+
+.inputFocus {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none
+}
+
+.inputFocus::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: all .4s;
+    background: var(--solid-purple);
+}
+
+.inputBox:focus+.inputFocus::before {
+    width: 100%
+}
+
+.has-val.inputBox+.inputFocus::before {
+    width: 100%
+}
