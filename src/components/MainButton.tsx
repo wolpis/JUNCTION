@@ -1,9 +1,14 @@
 import style from "./component.module.css"
+import { PropsWithChildren, CSSProperties } from 'react'
 
-export const MainButton = () => {
+type StyleProps = {
+    style: CSSProperties
+}
+
+export const MainButton = (props: PropsWithChildren<StyleProps>) => {
     return (
-        <div className={style.submit_button}>
-            Submit Yours Now!
+        <div className={style.submit_button} style={props.style}>
+            {props.children}
         </div>
     )
 }

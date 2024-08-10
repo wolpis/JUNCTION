@@ -1,0 +1,16 @@
+.submit_button {
+    background-color: var(--solid-skyblue);
+    color: var(--solid-white);
+    padding: 10px;
+    font-size: 1.2em;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-weight: 600;
+    line-height: 150%;
+    /* 48px */
+    letter-spacing: 1.28px;
+    flex-wrap: wrap;
+    display: flex;
+}
