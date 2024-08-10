@@ -1,13 +1,13 @@
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
-import MainPage from './mainpage/mainpage'
-import LoginPage from './login/loginpage'
+import Mainpage from './mainpage/mainpage'
+import SignInPage from './signin/signinpage'
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<MainPage />} />
-      <Route path="/login" element={<LoginPage />} />
+      <Route path="/" element={<Mainpage />} />
+      <Route path="/sign-in" element={<SignInPage />} />
       <Route path="/profile/:nickname" element={<div>어바웃페이지임</div>} />
     </Routes>
   )
