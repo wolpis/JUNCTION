@@ -20,7 +20,7 @@ export const SignIn = () => {
                     Sign In
                 </MainButton>
                 <div className={style.desc}>
-                    <span>Sign Up</span> or <span>Find E-mail & PW</span>
+                    <span style={{ cursor: "pointer" }} onClick={() => location.replace("/sign-up")}>Sign Up</span> or <span>Find E-mail & PW</span>
                 </div>
             </div>
         </div>
