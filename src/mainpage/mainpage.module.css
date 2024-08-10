@@ -78,7 +78,9 @@
 }
 
 .process_bar {
-    width: 700px;
+    width: 50%;
     height: 10px;
     background-color: brown;
+    display: flex;
+
 }

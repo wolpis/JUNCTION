@@ -34,7 +34,10 @@ export const TopicProcess = () => {
                 <span>Today is:</span> Mon<br />
                 Planning Session <span>is ~ing</span>
             </div>
-            <ProcessBar />
+            <div style={{ width: "100%", justifyContent: "center", display: "flex" }}>
+                <ProcessBar />
+            </div>
+
         </div>
     )
 }
