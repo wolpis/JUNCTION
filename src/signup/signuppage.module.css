@@ -73,9 +73,9 @@ input::placeholder {
 
 .inputWarp {
     border-bottom: 2px solid var(--solid-skyblue);
-    width: 70%;
+    width: 80%;
     position: relative;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 input {

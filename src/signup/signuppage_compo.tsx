@@ -55,12 +55,14 @@ const TwoStage = ({ setStage, Setdata }: { setStage: React.Dispatch<React.SetSta
     return (
         <>
             <p style={{ marginTop: "60px", width: "80%" }}>What’s your username?</p>
-            <div style={{ borderBottom: "2px solid var(--solid-skyblue)", width: "80%" }}>
-                <input placeholder="DevQueen" style={{ fontSize: "0.8em", marginTop: "10px" }} value={nickname} onChange={(e) => { SetNick(e.target.value) }} />
+            <div className={style.inputWarp}>
+                <input className={style.inputBox} type="text" name="name" placeholder="DevQueen" value={nickname} onChange={(e) => { SetNick(e.target.value) }} />
+                <span className={style.inputFocus}></span>
             </div>
             <p style={{ marginTop: "60px", width: "80%" }}>What’s your E-mail?</p>
-            <div style={{ borderBottom: "2px solid var(--solid-skyblue)", width: "80%" }}>
-                <input type="email" placeholder="someone@example.com" style={{ fontSize: "0.8em", marginTop: "10px" }} value={email} onChange={(e) => { SetEmail(e.target.value) }} />
+            <div className={style.inputWarp}>
+                <input className={style.inputBox} type="email" name="name" placeholder="someone@example.com" value={email} onChange={(e) => { SetEmail(e.target.value) }} />
+                <span className={style.inputFocus}></span>
             </div>
             <div onClick={() => {
                 if (nickname !== "" && email !== "") {
@@ -81,11 +83,13 @@ const ThreeStage = ({ setStage, Setdata, data }: { setStage: React.Dispatch<Reac
     return (
         <>
             <p style={{ marginTop: "60px", width: "80%" }}>Input your Password</p>
-            <div style={{ borderBottom: "2px solid var(--solid-skyblue)", width: "80%" }}>
-                <input type="password" placeholder="Input your password here." style={{ fontSize: "0.8em", marginTop: "10px" }} value={pwd} onChange={(e) => { SetPWD(e.target.value) }} />
+            <div className={style.inputWarp}>
+                <input className={style.inputBox} type="password" name="name" placeholder="Input your password here." value={pwd} onChange={(e) => { SetPWD(e.target.value) }} />
+                <span className={style.inputFocus}></span>
             </div>
-            <div style={{ borderBottom: "2px solid var(--solid-skyblue)", width: "80%" }}>
-                <input type="password" placeholder="One more time!" style={{ fontSize: "0.8em", marginTop: "10px" }} value={pwd2} onChange={(e) => { SetPWD2(e.target.value) }} />
+            <div className={style.inputWarp}>
+                <input className={style.inputBox} type="password" name="name" placeholder="One more time!" value={pwd2} onChange={(e) => { SetPWD2(e.target.value) }} />
+                <span className={style.inputFocus}></span>
             </div>
             <div onClick={() => {
                 if (pwd === pwd2) {
