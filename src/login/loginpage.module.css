@@ -1,0 +1,12 @@
+.container {
+    display: block;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.login_div {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}

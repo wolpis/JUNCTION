@@ -1,8 +1,12 @@
-import styles from './login.module.css'
+import { Fragment } from "react/jsx-runtime"
+import { HeaderBar } from "./mainpage_compo"
+
 
 const Mainpage = () => {
     return (
-        <div>메인페이지임</div>
+        <Fragment>
+            <HeaderBar/>
+        </Fragment>
     )
 }
 
