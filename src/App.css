@@ -3,6 +3,10 @@
   font-family: "Wanted Sans Variable", "Wanted Sans", -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
+body {
+  background-color: black
+}
+
 :root {
   --solid-skyblue: #089CFF;
   --solid-purple: #BB4BFD;

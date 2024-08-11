@@ -6,10 +6,10 @@ export const HeaderBar = () => {
         <header className={style.header_}>
             <div>
                 <img src="/logo_2.png" style={{ width: "90px" }} onClick={() => location.replace("/")} />
-                <span>Home</span>
-                <span>Hall of Fame</span>
-                <span>Sponser</span>
-                <span>We are?</span>
+                <span style={{ cursor: "pointer" }}>Home</span>
+                <span style={{ cursor: "pointer" }}>Hall of Fame</span>
+                <span style={{ cursor: "pointer" }}>Sponser</span>
+                <span style={{ cursor: "pointer" }}>We are?</span>
                 <div className={style.sign_up} onClick={() => location.replace("/sign-in")}>Sign In</div>
             </div>
         </header>
